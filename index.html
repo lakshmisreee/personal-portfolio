@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lakshmi Sree | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <div id="loginPage" class="login-page">
+
+        <div class="login-card">
+
+            <h1>Welcome 👋</h1>
+
+            <p>Login to view my portfolio</p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+            >
+
+            <button onclick="loginUser()">Login</button>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PROFILE PAGE ================= -->
+
+    <div id="profilePage" class="profile-page">
+
+        <!-- Navigation -->
+
+        <header>
+
+            <nav class="navbar">
+
+                <h1 class="logo">Lakshmi Sree</h1>
+
+                <div class="nav-links">
+
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+
+                    <button class="logout-btn" onclick="logoutUser()">
+                        Logout
+                    </button>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <!-- Home -->
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="intro">Hello, I'm</p>
+
+                <h2>Lakshmi Sree</h2>
+
+                <h3>Computer Science Engineering Student</h3>
+
+                <p class="hero-text">
+                    Building, learning and solving with code.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+
+                <div class="social-links">
+
+                    <a
+                        href="https://github.com/lakshmisreee"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/lakshmi-sree-batchu-593962421/"
+                        target="_blank"
+                    >
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section id="about" class="section">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am a Computer Science Engineering student interested in
+                software development, web development and problem solving.
+                I enjoy learning new technologies and building projects
+                that improve my technical skills.
+            </p>
+
+        </section>
+
+
+        <!-- Skills -->
+
+        <section id="skills" class="section">
+
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill">Java</div>
+
+                <div class="skill">HTML</div>
+
+                <div class="skill">CSS</div>
+
+                <div class="skill">JavaScript</div>
+
+                <div class="skill">
+                    Data Structures & Algorithms
+                </div>
+
+                <div class="skill">
+                    Git & GitHub
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section id="projects" class="section">
+
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+
+                    <h3>KL E-Commerce Website</h3>
+
+                    <p>
+                        An e-commerce website developed using HTML,
+                        CSS and JavaScript with product browsing and
+                        cart functionality.
+                    </p>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive personal portfolio website created
+                        using HTML, CSS and JavaScript to showcase my
+                        skills, projects and education.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Education -->
+
+        <section id="education" class="section">
+
+            <h2>Education</h2>
+
+            <div class="project-card education-card">
+
+                <h3>
+                    Bachelor of Technology -
+                    Computer Science Engineering
+                </h3>
+
+                <p>
+                    KL University, Vijayawada
+                </p>
+
+                <p>
+                    Currently pursuing B.Tech in Computer Science
+                    and Engineering.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section id="contact" class="section contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Email:
+                <a href="mailto:lakshmisreenaidu008@gmail.com">
+                    lakshmisreenaidu008@gmail.com
+                </a>
+            </p>
+
+            <p>
+                GitHub:
+                <a
+                    href="https://github.com/lakshmisreee"
+                    target="_blank"
+                >
+                    lakshmisreee
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a
+                    href="https://www.linkedin.com/in/lakshmi-sree-batchu-593962421/"
+                    target="_blank"
+                >
+                    lakshmi-sree-batchu
+                </a>
+            </p>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>
+                © 2026 Lakshmi Sree | Personal Portfolio
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

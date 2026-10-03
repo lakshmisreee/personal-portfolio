@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f7ff;
+    color: #222;
+}
+
+
+/* ================= LOGIN PAGE ================= */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #eee7ff,
+        #ffffff
+    );
+}
+
+.login-card {
+    width: 380px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+.login-card h1 {
+    color: #6c4ab6;
+
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+.login-card input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: #6c4ab6;
+}
+
+.login-card button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #6c4ab6;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background: #54359b;
+
+    transform: translateY(-2px);
+}
+
+#loginMessage {
+    margin-top: 15px;
+
+    color: #6c4ab6;
+
+    font-weight: bold;
+}
+
+
+/* ================= PROFILE PAGE ================= */
+
+.profile-page {
+    display: none;
+}
+
+
+/* Navigation */
+
+header {
+    background: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.logo {
+    color: #6c4ab6;
+
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6c4ab6;
+}
+
+
+/* Logout */
+
+.logout-btn {
+    border: none;
+
+    background: #6c4ab6;
+
+    color: white;
+
+    padding: 8px 16px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #54359b;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eee7ff,
+            #ffffff
+        );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.intro {
+    color: #6c4ab6;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 60px;
+
+    margin: 10px 0;
+}
+
+.hero h3 {
+    font-size: 26px;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    font-size: 18px;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #6c4ab6;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #54359b;
+
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: white;
+
+    color: #6c4ab6;
+
+    border: 2px solid #6c4ab6;
+}
+
+.secondary-btn:hover {
+    background: #6c4ab6;
+
+    color: white;
+}
+
+
+/* Social Links */
+
+.social-links {
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.social-links a {
+    text-decoration: none;
+
+    color: #555;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #6c4ab6;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+
+    margin-bottom: 25px;
+
+    color: #6c4ab6;
+}
+
+.section > p {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #555;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.skill {
+    background: white;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.project-card {
+    background: white;
+
+    width: 350px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+    color: #6c4ab6;
+
+    margin-bottom: 10px;
+}
+
+
+/* Education */
+
+.education-card {
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding-bottom: 100px;
+}
+
+.contact p {
+    margin: 10px 0;
+
+    color: #555;
+}
+
+.contact a {
+    color: #6c4ab6;
+
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    background: #222;
+
+    color: white;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .login-card {
+        width: 90%;
+
+        padding: 30px;
+    }
+}
